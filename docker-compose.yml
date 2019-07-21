@@ -20,7 +20,7 @@ services:
         - database
         
     database:
-      image: mysql:5.7
+      image: mariadb:10.4
       environment:
         MYSQL_DATABASE: database
         MYSQL_ROOT_PASSWORD: secret
