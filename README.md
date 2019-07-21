@@ -8,6 +8,8 @@ Run everything with `docker-compose up -d`. Use `-d` for running the containers 
 
 Your app will be available on [http://localhost:8080](http://localhost:8080).
 
+To help you manage your database there's an adminer available on [http://localhost:8081](http://localhost:8081).
+
 ## Setting up your `wp_config.php` or `.env` files
 
 Change the `host` value for your database inside your `wp_config.php` or `.env` file, as the database is in a different container (`localhost` will not work). Otherwise your app will not be able to connect to the database.
