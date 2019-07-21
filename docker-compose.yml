@@ -25,6 +25,9 @@ services:
       environment:
         MYSQL_DATABASE: database
         MYSQL_ROOT_PASSWORD: secret
+      command:
+        - --character-set-server=utf8mb4
+        - --collation-server=utf8mb4_unicode_ci
 
     adminer:
       image: adminer:4.7
