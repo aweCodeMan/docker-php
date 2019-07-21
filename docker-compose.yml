@@ -25,3 +25,10 @@ services:
       environment:
         MYSQL_DATABASE: database
         MYSQL_ROOT_PASSWORD: secret
+
+    adminer:
+      image: adminer:4.7
+      ports:
+        - 8081:8080
+      depends_on:
+        - database
